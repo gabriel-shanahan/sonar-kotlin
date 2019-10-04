@@ -24,7 +24,7 @@ This sonar-kotlin is not the official sonarqube plugin.
 It was released before the official plugin and uses the same plugin key 'kotlin'.
 ~~That means you can't use this plugin together with the official one.~~
 
-It is possible to use SonarQube with both this plugin and the official installed, however only one of them can be active at any time.
+It is possible to use SonarQube with both this plugin and the official installed, however this plugin will overwrite the official one.
 
 - `git clone https://github.com/arturbosch/sonar-kotlin`
 - `cd sonar-kotlin`
@@ -33,7 +33,7 @@ It is possible to use SonarQube with both this plugin and the official installed
 - `cd $SONAR_HOME/bin/[your_os]`
 - `./sonar.sh restart`
 
-In the SonarQube UI, go to Administration and in either Kotlin or Kotlin Detekt (depending on which you want to disable) 
+Finally, in the SonarQube UI, go to Administration and in under Kotlin, remove the .kt extension, instead inputting any random sequence (be sure it cannot be a real file suffix). 
 
 ### Configurations and Baselines (and Filters)
 
