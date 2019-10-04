@@ -5,8 +5,8 @@ import org.sonar.api.utils.log.Logger
 import org.sonar.api.utils.log.Loggers
 import java.util.Optional
 
-const val KEY = "kotlin"
-const val NAME = "Kotlin"
+const val KEY = "kotlin-detekt"
+const val NAME = "Kotlin Detekt"
 const val FILE_SUFFIX = ".kt"
 const val SCRIPT_SUFFIX = ".kts"
 
