@@ -24,7 +24,7 @@ This sonar-kotlin is not the official sonarqube plugin.
 It was released before the official plugin and uses the same plugin key 'kotlin'.
 ~~That means you can't use this plugin together with the official one.~~
 
-It is possible to use SonarQube with both this plugin and the official installed, however this plugin will overwrite the official one.
+It is possible to use SonarQube with both this plugin and the official installed, however this plugin will permanently supersede the official one.
 
 - `git clone https://github.com/arturbosch/sonar-kotlin`
 - `cd sonar-kotlin`
