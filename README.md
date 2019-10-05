@@ -24,7 +24,7 @@ This sonar-kotlin is not the official sonarqube plugin.
 It was released before the official plugin and uses the same plugin key 'kotlin'.
 ~~That means you can't use this plugin together with the official one.~~
 
-It is possible to use SonarQube with both this plugin and the official installed, however this plugin will permanently supersede the official one.
+This fork makes it possible to use SonarQube with the official plugin included, however this plugin will permanently supersede the official one. 
 
 - `git clone https://github.com/arturbosch/sonar-kotlin`
 - `cd sonar-kotlin`
@@ -33,7 +33,11 @@ It is possible to use SonarQube with both this plugin and the official installed
 - `cd $SONAR_HOME/bin/[your_os]`
 - `./sonar.sh restart`
 
-Finally, in the SonarQube UI, go to Administration and remove the '.kt' file extension under 'Kotlin'. Instead use any random sequence, but be sure it cannot be a real file suffix. 
+You can use the included Dockerfile to get up and running.
+
+Alternatively, you can also use the included docker-compose.yml, which was originally taken from [here](https://gist.github.com/Warchant/0d0f0104fe7adf3b310937d2db67b512). 
+
+Once you're up and running, in the SonarQube UI, go to Administration and remove the '.kt' file extension under 'Kotlin'. Instead use any random sequence, but be sure it cannot be a real file suffix.
 
 ### Configurations and Baselines (and Filters)
 
